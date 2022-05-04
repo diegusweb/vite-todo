@@ -12,7 +12,13 @@ const routes: RouteRecordRaw[] = [
         path: '/contact',
         name: 'Contact',
         component: ContactView
-    }
+    },
+    {
+        path: "/tutorials",
+        alias: "/tutorials",
+        name: "tutorials",
+        component: () => import('../components/TutorialList.vue'),
+      },
 ];
 
 const router =  createRouter({
